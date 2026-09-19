@@ -1,0 +1,27 @@
+{
+  "name": "post-e-get---atividade",
+  "version": "1.0.0",
+  "description": "Essa é uma atividade para obter menção no componente de CNWII, o objetivo é fazer um get e um post em um banco de dados que esteja em nuvem.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dearer-Dev/Post-e-Get---Atividade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dearer-Dev/Post-e-Get---Atividade/issues"
+  },
+  "homepage": "https://github.com/Dearer-Dev/Post-e-Get---Atividade#readme",
+  "dependencies": {
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.4",
+    "nodemon": "^3.1.14"
+  }
+}
