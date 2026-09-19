@@ -13,6 +13,18 @@ app.listen(3000, async ()=> {
     console.log("Servidor rodando na porta: 3000");
 });
 
+app.get("/", (req, res) => {
+    res.json({ 
+        status: "API rodando com sucesso!", 
+        mensagem_get: "Acesse /usuarios para ver os usuários cadastrados.",
+        mensagem_post: "Use a rota /cadastrarUsuario via Postman ou outro cliente de API pra fazer requisições HTTP  para cadastrar um usuário.",
+        exemplo_body_json: {
+            nome: "Exemplo de Nome",
+            idade: 18
+        }
+    });
+});
+
 app.get("/usuarios", async (req,res) =>{
     let usuarios = await buscarUsuarios()
     res.json(usuarios)
