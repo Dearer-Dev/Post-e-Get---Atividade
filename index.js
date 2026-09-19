@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
         status: "API rodando com sucesso!", 
         mensagem_get: "Acesse /usuarios para ver os usuários cadastrados.",
         mensagem_post: "Use a rota /cadastrarUsuario via Postman ou outro cliente de API pra fazer requisições HTTP  para cadastrar um usuário.",
-        exemplo_body_json: {
+        exemplo_body_json_para_rota_de_cadastro: {
             nome: "Exemplo de Nome",
             idade: 18
         }
