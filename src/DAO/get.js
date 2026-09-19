@@ -6,7 +6,6 @@ async function buscarUsuarios(){
     try {
         // Executar a consulta
         const [rows, fields] = await pool.query(sql);
-        await pool.end()
         return rows
       } catch (err) {
         return err.message
